@@ -1,0 +1,47 @@
+@import "tailwindcss";
+
+:root {
+  --paper: #EEF0EA;
+  --paper-raised: #F8F9F4;
+  --ink: #1E2422;
+  --ink-muted: #5B655F;
+  --line: #D7DAD0;
+  --accent: #2E4B6B;
+  --accent-soft: #E3E9F0;
+  --status-unpaid: #B3432B;
+  --status-unpaid-soft: #F3E1DB;
+  --status-partial: #B7791F;
+  --status-partial-soft: #F4E9D3;
+  --status-paid: #2F6B48;
+  --status-paid-soft: #DFEBE3;
+}
+
+@theme inline {
+  --color-paper: var(--paper);
+  --color-paper-raised: var(--paper-raised);
+  --color-ink: var(--ink);
+  --color-ink-muted: var(--ink-muted);
+  --color-line: var(--line);
+  --color-accent: var(--accent);
+  --color-accent-soft: var(--accent-soft);
+  --color-status-unpaid: var(--status-unpaid);
+  --color-status-unpaid-soft: var(--status-unpaid-soft);
+  --color-status-partial: var(--status-partial);
+  --color-status-partial-soft: var(--status-partial-soft);
+  --color-status-paid: var(--status-paid);
+  --color-status-paid-soft: var(--status-paid-soft);
+  --font-display: var(--font-fraunces);
+  --font-sans: var(--font-plex-sans);
+  --font-mono: var(--font-plex-mono);
+}
+
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-sans);
+}
+
+::selection {
+  background: var(--accent-soft);
+  color: var(--accent);
+}
